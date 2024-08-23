@@ -1,0 +1,147 @@
+.footer {
+  padding-top: 2.4rem;
+  @media (min-width: $mobile-small) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  &__container {
+    @media (min-width: $mobile-small) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  a {
+    color: #fff;
+  }
+  .footer-content {
+    @media (min-width: $mobile-small) {
+      max-width: 60%;
+    }
+    &__title {
+      color: #fff;
+      margin-bottom: 0.8rem;
+    }
+
+    &__text {
+    }
+  }
+  .wow {
+  }
+  .fadeIn {
+  }
+  .section-title {
+  }
+  .external-links {
+    display: flex;
+
+    gap: 0.8rem;
+    padding: 0.8rem 0;
+    &_cities {
+      align-items: center;
+      @media (min-width: $mobile-small) {
+        margin-bottom: 1.2rem;
+      }
+    }
+    &__list {
+      display: flex;
+    }
+    &_tg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      min-width: 6rem;
+      height: 6rem;
+      border-radius: 1.2rem;
+      @media (min-width: $mobile-small) {
+        min-width: 7.2rem;
+        height: 7.2rem;
+      }
+      img {
+        display: block;
+      }
+    }
+    &_vk {
+      display: flex;
+    }
+
+    &_blog {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin-bottom: 1.8rem;
+      @media (min-width: $mobile-small) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__item {
+      color: #fff;
+      @include text-main;
+    }
+
+    &__item--rows {
+    }
+  }
+
+  .links-block {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.8rem;
+    border-radius: 1.6rem;
+    @media (min-width: $mobile-small) {
+      gap: 1.2rem;
+    }
+    &__external-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      min-width: 5.6rem;
+      height: 5.6rem;
+      border-radius: 1.2rem;
+      @media (min-width: $mobile-small) {
+      }
+    }
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+  }
+  .link {
+  }
+  .js-gtm-event {
+  }
+  .copyrights {
+    font-size: 1.2rem;
+    color: #808080;
+    font-weight: 400;
+    @media (min-width: $mobile-small) {
+      font-size: 1.5rem;
+    }
+  }
+  .current-year {
+  }
+  .footer-image {
+    display: none;
+    @media (min-width: $mobile-small) {
+      position: relative;
+      width: 34%;
+      display: block;
+    }
+    img {
+      position: absolute;
+      top: -3rem;
+      right: 4rem;
+      width: 100%;
+      max-width: 39rem;
+    }
+  }
+  .footer-pic {
+  }
+}

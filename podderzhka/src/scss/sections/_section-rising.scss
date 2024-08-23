@@ -1,0 +1,36 @@
+.rising {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  @media (min-width: $mobile-small) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  &__title {
+    @include section-title-main;
+    margin-bottom: 1.2rem;
+  }
+
+  .cards-list {
+    @media (min-width: $mobile-small) {
+      flex-wrap: wrap;
+    }
+  }
+  .card {
+    box-shadow: 0px 1.25px 9.97px 0px #0000000f,
+      0px -6.23px 13.71px 0px #00000008;
+    @media (min-width: $mobile-small) {
+      max-width: calc(100% / 2 - 1.2rem);
+    }
+    
+    &__icon {
+      background-color: $color-t2-gray;
+      margin-bottom: 2.4rem;
+    }
+
+    &__title {
+      margin-bottom: 0.5rem;
+    }
+
+  }
+}
