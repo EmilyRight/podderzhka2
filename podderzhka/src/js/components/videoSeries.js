@@ -32,7 +32,7 @@ function playVideoSlider() {
   videoShortsList.forEach((videoItem) => {
     const slide = videoItem.closest('.swiper-slide');
     const videoShorts = slide.querySelector('.video-shorts');
-    videoItem.addEventListener('click', () => {
+    slide.addEventListener('click', () => {
       if (videoShorts.paused) {
         clearPlaying();
         playVideo(videoShorts, slide);
@@ -40,7 +40,7 @@ function playVideoSlider() {
         pauseVideo(videoShorts, slide);
       }
     });
-
+    
     videoItem.addEventListener('ended', () => {
       endVideo(videoShorts, slide);
     });

@@ -42,7 +42,7 @@
       padding: 0.8rem;
       max-width: 90%;
       @media (min-width: $mobile-small) {
-        max-width: none;
+        max-width: fit-content;
       }
     }
     .modal-image {

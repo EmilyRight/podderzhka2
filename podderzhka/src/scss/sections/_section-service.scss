@@ -4,8 +4,6 @@
     padding-top: 1.2rem;
     padding-bottom: 4rem;
   }
-  &__container {
-  }
 
   &__content {
     background-color: $color-t2-gray;
@@ -19,8 +17,6 @@
     }
   }
 
-  &__cards {
-  }
   .container {
     display: flex;
     flex-direction: column;
@@ -50,11 +46,6 @@
         filter: blur(80px);
       }
     }
-    &__text {
-    }
-
-    &__image {
-    }
   }
   .service-text {
     @media (min-width: $mobile) {
@@ -65,9 +56,6 @@
     }
     &__title {
       @include section-title-main;
-    }
-
-    &__subtitle {
     }
   }
   .service-image {
@@ -84,7 +72,7 @@
       justify-content: center;
       display: flex;
       position: absolute;
-      top: -3rem;
+      top: -15%;
       right: 1rem;
       @media (min-width: $mobile) {
         min-height: 38rem;

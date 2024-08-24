@@ -13,8 +13,7 @@
     padding-bottom: 0.6rem;
   }
 
-  &._sticky {
-  }
+
   &__logo {
     max-width: 4rem;
     @media (min-width: $mobile-small) {
@@ -137,7 +136,7 @@
     border-radius: 0.5rem;
     transition: 0.4s;
     top: 0.8rem;
-    right: 1.2rem;
+    right: 0;
     @media (min-width: $mobile-small) {
       display: none;
     }

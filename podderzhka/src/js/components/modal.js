@@ -14,9 +14,8 @@ export function openModal(modalBoxId, imageId) {
   body.classList.add(noscroll);
   modalContainer.classList.remove(hidden);
   modalBox.classList.add(active);
-  console.log('====================================');
-  console.log(imageId);
-  console.log('====================================');
+  console.log(modalBoxId, imageId);
+
   if (img) {
     setImgSrc(img, imageId);
   }
@@ -26,9 +25,6 @@ export function openModal(modalBoxId, imageId) {
       console.log(item.id, id);
       return item.id === id;
     });
-    console.log('====================================');
-    console.log(galleryItem);
-    console.log('====================================');
     image.src = galleryItem.src;
   }
 
@@ -56,6 +52,7 @@ function getScrollbarWidth() {
 export function closeModal(modalBoxId) {
   const modalBox = document.querySelector(modalBoxId);
   body.classList.remove(noscroll);
+  modalBox.classList.remove(active);
   body.style.paddingRight = '0px';
   modalBox.closest('.popup-modal').classList.add(hidden);
 }

@@ -1,18 +1,10 @@
 .serial {
   padding-bottom: 2.4rem;
-  &__container {
-  }
 
   &__title {
     margin-bottom: 1.6rem;
   }
 
-  &__video-box {
-  }
-  .container {
-  }
-  .section-title {
-  }
   .video-box {
     &__actions {
       display: flex;
@@ -48,12 +40,7 @@
       }
     }
   }
-  .js-play-serial {
-  }
-  .js-gtm-event {
-  }
-  .active {
-  }
+
   .video {
     &__play-button {
       position: absolute;
@@ -69,6 +56,8 @@
   .video-box__frame._isPlaying {
     .video__play-button {
       opacity: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 

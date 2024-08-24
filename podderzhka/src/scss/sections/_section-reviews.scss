@@ -35,14 +35,14 @@
   .swiper-wrapper {
   }
   .swiper-slide {
-		&._isPlaying {
-			.review-item__play-btn {
-				opacity: 0;
-			}
-			.review-item__label {
-				transform: translateY(10rem);
-			}
-		}
+    &._isPlaying {
+      .review-item__play-btn {
+        opacity: 0;
+      }
+      .review-item__label {
+        transform: translate(-50%, 10rem);
+      }
+    }
   }
   .review-item {
     &__video {
@@ -55,7 +55,11 @@
     &__label {
       position: absolute;
       bottom: 1.2rem;
-      left: 1.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      max-width: 90%;
+      text-align: center;
       color: #fff;
       text-transform: uppercase;
       padding: 0.6rem 1rem;
@@ -63,12 +67,8 @@
       border-radius: 1.6rem;
       font-size: 1.2rem;
       line-height: 1.6rem;
-			transition: .4s;
-      @media (min-width: $mobile) {
-        bottom: 2.4rem;
-        left: 2.4rem;
-        width: fit-content;
-      }
+      transition: 0.4s;
+
     }
 
     &__play-btn {
@@ -92,11 +92,8 @@
         transform: translate(-50%, -50%) scale(0.95);
       }
     }
-
-
   }
-  .js-play-stories {
-  }
+
   .video-shorts {
     object-fit: cover;
     position: absolute;

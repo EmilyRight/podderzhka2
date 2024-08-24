@@ -14,6 +14,7 @@
   .cards-list {
     @media (min-width: $mobile-small) {
       flex-wrap: wrap;
+      flex-direction: row;
     }
   }
   .card {
@@ -22,7 +23,7 @@
     @media (min-width: $mobile-small) {
       max-width: calc(100% / 2 - 1.2rem);
     }
-    
+
     &__icon {
       background-color: $color-t2-gray;
       margin-bottom: 2.4rem;
