@@ -14,17 +14,13 @@ export function openModal(modalBoxId, imageId) {
   body.classList.add(noscroll);
   modalContainer.classList.remove(hidden);
   modalBox.classList.add(active);
-  console.log(modalBoxId, imageId);
 
   if (img) {
     setImgSrc(img, imageId);
   }
 
   function setImgSrc(image, id) {
-    const [galleryItem] = galleryData.filter((item) => {
-      console.log(item.id, id);
-      return item.id === id;
-    });
+    const [galleryItem] = galleryData.filter((item) => item.id === id);
     image.src = galleryItem.src;
   }
 

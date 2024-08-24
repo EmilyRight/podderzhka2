@@ -3,37 +3,13 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-  &__container {
-  }
 
   &__title {
     max-width: 60%;
     margin-bottom: 1.2rem;
   }
 
-  &__video-slider {
-  }
-  .container {
-  }
-  .section-title {
-  }
-  .swiper {
-    &__container {
-    }
 
-    &__wrapper {
-    }
-  }
-  .swiper-container {
-  }
-  .swiper-nav {
-  }
-  .swiper-button-prev {
-  }
-  .swiper-button-next {
-  }
-  .swiper-wrapper {
-  }
   .swiper-slide {
     &._isPlaying {
       .review-item__play-btn {
@@ -99,5 +75,9 @@
     position: absolute;
     max-width: 100%;
     height: 100%;
+    border-radius: 1.6rem;
+    @media (min-width: $mobile-small) {
+      border-radius: 3.2rem;
+    }
   }
 }
