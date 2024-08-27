@@ -73,9 +73,6 @@ function handleSlider() {
   const sliderSections = document.querySelectorAll('.section-slider');
   sliderSections.forEach((section) => {
     const { id } = section;
-    console.log('====================================');
-    console.log(id);
-    console.log('====================================');
     const swiperContainer = section.querySelector('.swiper-container');
     const [optionsObj] = swiperOptions.filter((option) => option.id === id);
     const swiper = new Swiper(swiperContainer, optionsObj.options);
