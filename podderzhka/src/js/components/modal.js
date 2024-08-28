@@ -15,6 +15,7 @@ export function openModal(modalBoxId, imageId) {
   modalContainer.classList.remove(hidden);
   modalBox.classList.add(active);
 
+
   if (img) {
     setImgSrc(img, imageId);
   }

@@ -63,7 +63,9 @@ function openPopup() {
   const popupLinksList = document.querySelectorAll('.open-popup-modal');
   popupLinksList.forEach((link) => {
     const { popup, id } = link.dataset;
+    link.removeEventListener('click', openModal);
     link.addEventListener('click', () => {
+      console.log('click');
       openModal(`#${popup}`, id);
     });
   });
@@ -77,6 +79,7 @@ function handleSlider() {
     const [optionsObj] = swiperOptions.filter((option) => option.id === id);
     const swiper = new Swiper(swiperContainer, optionsObj.options);
     swiper.init();
+    swiper.on('activeIndexChange', openPopup);
   });
 }
 
