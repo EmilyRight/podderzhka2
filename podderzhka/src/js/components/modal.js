@@ -15,7 +15,6 @@ export function openModal(modalBoxId, imageId) {
   modalContainer.classList.remove(hidden);
   modalBox.classList.add(active);
 
-
   if (img) {
     setImgSrc(img, imageId);
   }
@@ -58,5 +57,6 @@ export function openMenu(icon) {
   const navMenu = document.querySelector('.header-nav');
   navMenu.classList.toggle('_opened');
   icon.classList.toggle('_opened');
+  body.style.paddingRight = '0px';
   body.classList.toggle(noscroll);
 }
