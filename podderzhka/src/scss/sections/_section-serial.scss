@@ -19,7 +19,7 @@
       font-size: 1.2rem;
       line-height: 1.6rem;
       padding: 0.6rem 1rem;
-      font-weight: 500;
+      font-weight: bold;
       border-radius: 1.6rem;
       background-color: $color-t2-mediumgray;
       color: #fff;
@@ -36,7 +36,7 @@
       width: 100%;
       @media (min-width: $mobile-small) {
         border-radius: 3.2rem;
-        min-height: 59.5vh;
+        min-height: 31vw;
       }
     }
   }
